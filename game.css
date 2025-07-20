@@ -1,0 +1,93 @@
+.game-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #3a5a40; /* Deep green background */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.player-area {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#field-area {
+    height: 30vh;
+    background-color: #588157; /* Lighter green for the field */
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.field-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
+}
+
+.card, .card-back {
+    width: 40px;
+    height: 60px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    background-size: cover;
+}
+
+.card-back {
+    background-color: #555;
+    border: 2px solid #fff;
+}
+
+.hand {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.hand .card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.captured-area {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 5px;
+    min-height: 80px;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.captured-area .card {
+    width: 30px;
+    height: 45px;
+}
+
+#message-area {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.back-to-top-game {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    text-decoration: none;
+}

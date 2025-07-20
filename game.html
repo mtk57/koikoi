@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>こいこい 対戦</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="opponent-area" class="player-area">
+            <div class="hand-size">手札: <span id="opponent-hand-size">8</span>枚</div>
+            <div id="opponent-captured" class="captured-area"></div>
+        </div>
+
+        <div id="field-area">
+            <div id="deck-area">
+                <div class="card-back"></div>
+                <div>山札: <span id="deck-size">?</span></div>
+            </div>
+            <div id="field-cards" class="field-cards"></div>
+        </div>
+
+        <div id="player-area" class="player-area">
+            <div id="player-hand" class="hand"></div>
+            <div id="player-captured" class="captured-area"></div>
+        </div>
+
+        <div id="action-panel" class="hidden">
+            <h2>役ができました！</h2>
+            <p id="yaku-name-panel"></p>
+            <button id="koikoi-btn">こいこい</button>
+            <button id="agari-btn">あがり</button>
+        </div>
+
+        <div id="message-area">あなたの番です</div>
+        <a href="/" class="back-to-top-game">トップに戻る</a>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
